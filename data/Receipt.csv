@@ -1,0 +1,7 @@
+receiptid,status,completiontime,estimatedtime,orderIds,totaltax,orderstatus,totalprice
+1234,paid,1345,1350,12,490,served,1470
+5678,paid,1432,1445,34,490,served,1599
+2345,paid,2345,2345,56,490,served,2025
+5467,paid,2143,2145,78,490,served,3200
+3574,paid,2343,2345,90,490,served,4500
+7689,paid,1346,1347,21,490,served,3260

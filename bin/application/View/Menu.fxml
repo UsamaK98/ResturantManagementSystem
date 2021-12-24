@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.View.MenuController">
+   <children>
+      <Label layoutX="123.0" layoutY="48.0" prefHeight="31.0" prefWidth="234.0" text="What would you like to do?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="47.0" layoutY="144.0" mnemonicParsing="false" onAction="#openSeatReservationPage" prefHeight="86.0" prefWidth="118.0" text="Reserve Seat" />
+      <Button layoutX="304.0" layoutY="144.0" mnemonicParsing="false" onAction="#openMainMenuPage" prefHeight="85.0" prefWidth="118.0" text="Dine IN" />
+      <Button layoutX="47.0" layoutY="288.0" mnemonicParsing="false" onAction="#openDeliveryPage" prefHeight="96.0" prefWidth="118.0" text="Delivery" />
+      <Button layoutX="304.0" layoutY="288.0" mnemonicParsing="false" onAction="#openMainMenuPage" prefHeight="96.0" prefWidth="118.0" text="Pick up" />
+   </children>
+</AnchorPane>

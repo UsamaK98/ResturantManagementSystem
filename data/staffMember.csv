@@ -1,0 +1,7 @@
+id,shift,salary,breaktime,status,stafftype
+12,am,18000,1300,active,waiter
+34,pm,40000,2200,active,cook
+56,am,46000,1300,active,cook
+78,pm,19000,2200,active,waiter
+90,am,18500,1300,active,waiter
+21,pm,43000,2200,active,cook

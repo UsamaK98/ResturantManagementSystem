@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.View.MainController">
+   <children>
+    <Label layoutX="81.0" layoutY="37.0" prefHeight="78.0" prefWidth="319.0" text="       Welcome to Our Restaurant">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="177.0" layoutY="135.0" mnemonicParsing="false" onAction="#LoginSelected" prefHeight="66.0" prefWidth="146.0" text="Log in" />
+      <Button layoutX="177.0" layoutY="293.0" mnemonicParsing="false" onAction="#openStaffRegPage" prefHeight="66.0" prefWidth="146.0" text="Register" />
+      <Label layoutX="240.0" layoutY="237.0" prefHeight="18.0" prefWidth="42.0" text="OR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Lighting diffuseConstant="2.0" light="$null" specularConstant="0.0" specularExponent="20.94" surfaceScale="4.91">
+         <bumpInput>
+            <Bloom threshold="0.0" />
+         </bumpInput>
+      </Lighting>
+   </effect>
+</AnchorPane>

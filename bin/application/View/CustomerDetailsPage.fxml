@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.View.CustomerDetailsController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="27.0" prefHeight="44.0" prefWidth="450.0" text="Enter Customer Details" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="94.0" prefHeight="20.0" prefWidth="51.0" text="Name:" />
+      <Label layoutX="40.0" layoutY="148.0" text="Age:" />
+      <Label layoutX="34.0" layoutY="204.0" prefHeight="20.0" prefWidth="51.0" text="Gender:" />
+      <Label layoutX="34.0" layoutY="257.0" prefHeight="30.0" prefWidth="119.0" text="Contact Number:" />
+      <Label layoutX="34.0" layoutY="312.0" prefHeight="30.0" prefWidth="51.0" text="Email:" />
+      <Label layoutX="36.0" layoutY="374.0" prefHeight="20.0" prefWidth="60.0" text="Address:" />
+      <TextField fx:id="name" layoutX="91.0" layoutY="89.0" />
+      <TextField fx:id="age" layoutX="91.0" layoutY="143.0" />
+      <TextField fx:id="contact" layoutX="152.0" layoutY="257.0" />
+      <TextField fx:id="email" layoutX="106.0" layoutY="312.0" />
+      <TextField fx:id="address" layoutX="106.0" layoutY="369.0" />
+      <Button layoutX="351.0" layoutY="428.0" mnemonicParsing="false" onAction="#CustomerEntered" prefHeight="30.0" prefWidth="107.0" text="Enter">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="53.0" layoutY="428.0" mnemonicParsing="false" onAction="#goBack" prefHeight="44.0" prefWidth="107.0" text="Log Out">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="i" layoutX="91.0" layoutY="199.0" mnemonicParsing="false" onAction="#getGender" prefHeight="30.0" prefWidth="82.0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#setMale" text="Male" />
+          <MenuItem mnemonicParsing="false" onAction="#setFemale" text="Female" />
+            <MenuItem mnemonicParsing="false" onAction="#setOther" text="Other" />
+        </items>
+      </MenuButton>
+      <Button layoutX="206.0" layoutY="428.0" mnemonicParsing="false" onAction="#skip" prefHeight="44.0" prefWidth="89.0" text="Skip">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

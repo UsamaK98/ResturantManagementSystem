@@ -1,0 +1,3 @@
+usama iamgreat 34
+kanza helloworld 12
+admin root 00
